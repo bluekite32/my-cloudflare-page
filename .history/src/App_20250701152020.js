@@ -21,7 +21,7 @@ function App() {
     <div className="App">
       <video
         ref={videoRef}
-        className="background-video fade-in"
+        className="background-video"
         src="/background.mp4"
         autoPlay
         loop
@@ -30,10 +30,10 @@ function App() {
         aria-hidden="true"
         disablePictureInPicture
       />
-      <div className="logo-container fade-in">
+      <div className="logo-container">
         <img src={logo} className="App-logo" alt="logo" />
         <button
-          className="play-pause-btn fade-in"
+          className="play-pause-btn"
           onClick={togglePlay}
           aria-label={playing ? "Pause" : "Play"}
         >

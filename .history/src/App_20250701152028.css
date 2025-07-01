@@ -54,18 +54,40 @@ body,
   }
 }
 
-@keyframes simple-fade-in {
-  from {
-    opacity: 0;
+@keyframes flicker {
+  0% {
+    opacity: 0.7;
   }
-  to {
+  100% {
     opacity: 1;
   }
 }
 
-.fade-in {
-  opacity: 0;
-  animation: simple-fade-in 6s ease forwards;
+@keyframes flicker-glitch {
+  0% {
+    opacity: 0.6;
+    filter: blur(0.5px) hue-rotate(-10deg);
+  }
+  20% {
+    opacity: 1;
+    filter: blur(1.5px) hue-rotate(10deg);
+  }
+  40% {
+    opacity: 0.7;
+    filter: blur(0.5px) hue-rotate(-20deg);
+  }
+  60% {
+    opacity: 1;
+    filter: blur(1px) hue-rotate(20deg);
+  }
+  80% {
+    opacity: 0.8;
+    filter: blur(0.5px) hue-rotate(0deg);
+  }
+  100% {
+    opacity: 1;
+    filter: blur(0px) hue-rotate(0deg);
+  }
 }
 
 .background-video {

@@ -65,7 +65,7 @@ body,
 
 .fade-in {
   opacity: 0;
-  animation: simple-fade-in 6s ease forwards;
+  animation: simple-fade-in 1s ease forwards;
 }
 
 .background-video {
